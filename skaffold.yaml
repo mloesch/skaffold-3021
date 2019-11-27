@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1
+kind: Config
+metadata:
+  name: skaffold-test
+deploy:
+  kubeContext: minikube
+  kubectl:
+    manifests:
+    - mailhog.yaml
